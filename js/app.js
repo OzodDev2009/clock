@@ -17,8 +17,8 @@ function start() {
     clock.m.style = `transform: rotate(${minDeg}deg)`
     clock.h.style = `transform: rotate(${hourDeg}deg)`
 
-    clock.hours.innerHTML = date.getHours() > 9 ? date.getHours() : '0' + date.getHours()
-    clock.minutes.innerHTML = date.getSeconds() > 9 ? date.getSeconds() : '0' + date.getSeconds()
+    clock.hours.innerHTML = date.getHours()
+    clock.minutes.innerHTML = date.getMinutes()
 
     setTimeout(() => {
         start();
